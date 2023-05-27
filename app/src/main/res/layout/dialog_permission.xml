@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/dialogTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/permission_needed"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:gravity="start"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/dialogMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/permission_message"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dialogTitle"
+                />
+
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="false"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:background="?selectableItemBackground"
+                app:layout_constraintTop_toBottomOf="@+id/dialogMessage"
+                app:layout_constraintEnd_toStartOf="@+id/btnProceed"
+                />
+
+            <Button
+                android:id="@+id/btnProceed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/allow"
+                android:layout_marginTop="15sp"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:background="?selectableItemBackground"
+                app:layout_constraintTop_toBottomOf="@+id/dialogMessage"
+                app:layout_constraintEnd_toEndOf="@+id/dialogMessage"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">dummy</string>
+    <string name="permission_message">Write Permission is required for getting files. Please allow it so you can use this application correctly</string>
+    <string name="permission_needed">Permission Needed</string>
+    <string name="cancel">Cancel</string>
+    <string name="allow">Allow</string>
+    <string name="todo">TODO</string>
+    <string name="no_files_found">No Files Found</string>
+</resources>
